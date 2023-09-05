@@ -16,11 +16,39 @@
 
 .selection-card {
     width: fit-content;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgb(96 105 119 / 60%);
     border-radius: 0%;
     padding: 1%;
 }
 
 .input-field {
     border-radius: 0%;
+    height: 4rem;
+    margin: 0;
+}
+
+.date-field {
+    background-color: #191b1e;
+    border: none;
+    border-radius: 0%;
+    color: white;
+    height: 4rem;
+    cursor: pointer;
+}
+
+.form-button {
+    border: none;
+    border-radius: 0%;
+    background-color: #E81932;
+    color: white;
+    font-size: large;
+    height: 4rem;
+}
+
+.form-button:hover {
+    background-color: #de2036;
+}
+
+.form-button:active {
+    background-color: #de2036 !important;
 }

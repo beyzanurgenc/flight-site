@@ -5,7 +5,8 @@ const HOME_PAGE = Object.freeze({
     LABEL_HEADER: 'Merhaba',
     LABEL_SUB_HEADER: 'Nereyi keşfetmek istersiniz?',
     FROM_PLACEHOLDER: "Nereden",
-    TO_PLACEHOLDER: "Nereye"
+    TO_PLACEHOLDER: "Nereye",
+    DATE: "Tarih"
 });
 
 
