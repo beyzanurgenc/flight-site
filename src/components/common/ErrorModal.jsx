@@ -1,17 +1,14 @@
-import { Button, Modal, ModalBody, ModalFooter, ModalHeader, ModalTitle } from "react-bootstrap";
+import { Button, Modal, ModalBody, ModalFooter } from "reactstrap";
 import uiEnum from "../../utils/constants/uiEnum";
 
-const ErrorModal = () => {
+const ErrorModal = ({ isOpen, onCloseCallback }) => {
     return (
-        <Modal centered show={true} onHide={() => { }}>
-            <ModalHeader closeButton>
-                <ModalTitle>
-                    {uiEnum.HOME_PAGE.ERROR_MODAL_TITLE}
-                </ModalTitle>
-            </ModalHeader>
+        <Modal isOpen={isOpen}>
             <ModalBody>{uiEnum.HOME_PAGE.ERROR_MODAL_DESCRIPTION}</ModalBody>
             <ModalFooter>
-                <Button variant="secondary">{uiEnum.HOME_PAGE.ERROR_CLOSE_BUTTON}</Button>
+                <Button color="secondary" onClick={() => {
+                    onCloseCallback()
+                }}>{uiEnum.HOME_PAGE.ERROR_CLOSE_BUTTON}</Button>
             </ModalFooter>
         </Modal>
     );

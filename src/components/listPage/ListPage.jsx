@@ -1,7 +1,16 @@
+import { useEffect, useState } from "react";
+import { getFromStorage } from "../../controllers/storageController";
+
 const ListPage = () => {
+    const [selection, setSelection] = useState();
+
+    useEffect(() => {
+        setSelection(getFromStorage("selection"));
+    }, []);
+
     return (
         <div>
-            ListPage
+            {JSON.stringify(selection)}
         </div>
     );
 };
